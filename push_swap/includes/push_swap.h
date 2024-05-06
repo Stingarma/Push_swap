@@ -6,7 +6,7 @@
 /*   By: lsaumon <lsaumon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/08 00:37:34 by lsaumon           #+#    #+#             */
-/*   Updated: 2024/04/20 14:48:04 by lsaumon          ###   ########.fr       */
+/*   Updated: 2024/05/06 07:38:50 by lsaumon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,8 @@ void	rrb(t_stack **b, int flag);
 void	rrr(t_stack **a, t_stack **b);
 int		ft_atol(const char *nptr);
 int		check_number(char *string);
-int check_double(char **argv);
-int	parsing(int argc, char **argv);
+int		check_double(char **argv);
+int		parsing(int argc, char **argv);
+void	init_pushswap(t_list *stack);
 
 #endif

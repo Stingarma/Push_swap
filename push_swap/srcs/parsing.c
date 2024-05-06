@@ -6,7 +6,7 @@
 /*   By: lsaumon <lsaumon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 16:19:06 by lsaumon           #+#    #+#             */
-/*   Updated: 2024/04/22 13:41:40 by lsaumon          ###   ########.fr       */
+/*   Updated: 2024/05/06 07:12:59 by lsaumon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,10 @@ int	ft_atol(const char *nptr)
 	return (1);
 }
 
-int		check_number(char *string)
+int	check_number(char *string)
 {
 	int	i;
-	
+
 	i = 0;
 	if (string[i] == '-')
 		i++;
@@ -51,13 +51,13 @@ int		check_number(char *string)
 	{
 		if (string[i] >= '0' && string[i] <= '9')
 			i++;
-		else 
+		else
 			return (0);
 	}
 	return (1);
 }
 
-int check_double(char **argv)
+int	check_double(char **argv)
 {
 	int	i;
 	int	j;
@@ -82,10 +82,8 @@ int	parsing(int argc, char **argv)
 	int		i;
 
 	i = 1;
-	if	(argc == 1)
+	if (argc == 1)
 		return (0);
-	// if (argc == 2)
-	// 	ft_split(argv[1], ',');
 	while (argv[i])
 	{
 		if (!(check_number(argv[i])))

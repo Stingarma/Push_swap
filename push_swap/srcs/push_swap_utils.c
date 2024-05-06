@@ -6,7 +6,7 @@
 /*   By: lsaumon <lsaumon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 21:18:09 by lsaumon           #+#    #+#             */
-/*   Updated: 2024/03/16 15:13:12 by lsaumon          ###   ########.fr       */
+/*   Updated: 2024/05/06 07:11:56 by lsaumon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ void	sb(t_stack *b, int flag)
 
 void	ss(t_stack *a, t_stack *b)
 {
-	
 	sa(a, 0);
 	sb(b, 0);
 	ft_printf("ss\n");

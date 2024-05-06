@@ -6,18 +6,16 @@
 /*   By: lsaumon <lsaumon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 17:29:41 by lsaumon           #+#    #+#             */
-/*   Updated: 2024/03/16 15:17:52 by lsaumon          ###   ########.fr       */
+/*   Updated: 2024/05/06 07:11:29 by lsaumon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
 
-
-
 void	rra(t_stack **a, int flag)
 {
 	t_stack	*temp;
-	
+
 	if (ft_lstsize(*a) < 2)
 		return ;
 	temp = *a;
@@ -34,7 +32,7 @@ void	rra(t_stack **a, int flag)
 void	rrb(t_stack **b, int flag)
 {
 	t_stack	*temp;
-	
+
 	if (ft_lstsize(*b) < 2)
 		return ;
 	temp = *b;
