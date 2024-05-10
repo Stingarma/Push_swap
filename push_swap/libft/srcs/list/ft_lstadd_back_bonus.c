@@ -6,15 +6,15 @@
 /*   By: lsaumon <lsaumon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 09:56:32 by lsaumon           #+#    #+#             */
-/*   Updated: 2024/03/10 13:10:10 by lsaumon          ###   ########.fr       */
+/*   Updated: 2024/05/08 06:31:13 by lsaumon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/libft.h"
 
-void	ft_lstadd_back(t_stack **lst, t_stack *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_stack	*last;
+	t_list	*last;
 
 	if (!*lst)
 		*lst = new;

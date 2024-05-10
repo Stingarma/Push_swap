@@ -6,7 +6,7 @@
 /*   By: lsaumon <lsaumon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 17:29:41 by lsaumon           #+#    #+#             */
-/*   Updated: 2024/05/06 07:11:29 by lsaumon          ###   ########.fr       */
+/*   Updated: 2024/05/08 06:41:18 by lsaumon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@ void	rra(t_stack **a, int flag)
 {
 	t_stack	*temp;
 
-	if (ft_lstsize(*a) < 2)
+	if (ft_lstsize_push(*a) < 2)
 		return ;
 	temp = *a;
-	*a = ft_lstlast(*a);
+	*a = ft_lstlast_push(*a);
 	(*a)->next = temp;
 	temp = *a;
 	while (temp->next != *a)
@@ -33,10 +33,10 @@ void	rrb(t_stack **b, int flag)
 {
 	t_stack	*temp;
 
-	if (ft_lstsize(*b) < 2)
+	if (ft_lstsize_push(*b) < 2)
 		return ;
 	temp = *b;
-	*b = ft_lstlast(*b);
+	*b = ft_lstlast_push(*b);
 	(*b)->next = temp;
 	temp = *b;
 	while (temp->next != *b)

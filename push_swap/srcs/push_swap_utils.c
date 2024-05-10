@@ -6,7 +6,7 @@
 /*   By: lsaumon <lsaumon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 21:18:09 by lsaumon           #+#    #+#             */
-/*   Updated: 2024/05/06 07:11:56 by lsaumon          ###   ########.fr       */
+/*   Updated: 2024/05/08 06:40:57 by lsaumon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	sa(t_stack *a, int flag)
 {
 	int	temp;
 
-	if (ft_lstsize(a) < 2)
+	if (ft_lstsize_push(a) < 2)
 		return ;
 	temp = a->value;
 	a->value = a->next->value;
@@ -29,7 +29,7 @@ void	sb(t_stack *b, int flag)
 {
 	int	temp;
 
-	if (ft_lstsize(b) < 2)
+	if (ft_lstsize_push(b) < 2)
 		return ;
 	temp = b->value;
 	b->value = b->next->value;
@@ -49,11 +49,11 @@ void	pa(t_stack **a, t_stack **b)
 {
 	t_stack	*temp;
 
-	if (ft_lstsize(*b) < 1)
+	if (ft_lstsize_push(*b) < 1)
 		return ;
 	temp = *b;
 	*b = (*b)->next;
-	ft_lstadd_front(a, temp);
+	ft_lstadd_front_push(a, temp);
 	*a = temp;
 	ft_printf("pa\n");
 }
@@ -62,11 +62,11 @@ void	pb(t_stack **a, t_stack **b)
 {
 	t_stack	*temp;
 
-	if (ft_lstsize(*a) < 1)
+	if (ft_lstsize_push(*a) < 1)
 		return ;
 	temp = *a;
 	*a = (*a)->next;
-	ft_lstadd_front(b, temp);
+	ft_lstadd_front_push(b, temp);
 	*b = temp;
 	ft_printf("pb\n");
 }

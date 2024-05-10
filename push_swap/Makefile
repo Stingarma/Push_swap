@@ -6,7 +6,7 @@
 #    By: lsaumon <lsaumon@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/08 01:08:31 by lsaumon           #+#    #+#              #
-#    Updated: 2024/04/09 13:13:03 by lsaumon          ###   ########.fr        #
+#    Updated: 2024/05/08 06:28:36 by lsaumon          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,8 @@ SRCS		:= $(addprefix $(SRC)/, main.c) \
 			   $(addprefix $(SRC)/, push_swap_utils2.c) \
 			   $(addprefix $(SRC)/, push_swap_utils3.c) \
 			   $(addprefix $(SRC)/, parsing.c) \
+			   $(addprefix $(SRC)/, push_swap.c) \
+			   $(addprefix $(SRC)/, list.c) \
 
 OBJ_DIR		:= .objs
 OBJS		:= $(addprefix $(OBJ_DIR)/, $(SRCS:.c=.o))
@@ -29,7 +31,7 @@ OBJS		:= $(addprefix $(OBJ_DIR)/, $(SRCS:.c=.o))
 # =================================== FLAGS ====================================
 
 CC			:=	cc
-FLAGS		:=	-Wall -Wextra  -g3 -fsanitize=address -Werror
+FLAGS		:=	-Wall -Wextra -Werror -g3 #-fsanitize=address
 FLAGS		+=	-I libft -I includes
 RM			:=	rm -rf
 

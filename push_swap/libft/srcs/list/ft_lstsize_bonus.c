@@ -6,13 +6,13 @@
 /*   By: lsaumon <lsaumon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 09:03:11 by lsaumon           #+#    #+#             */
-/*   Updated: 2024/03/10 13:06:11 by lsaumon          ###   ########.fr       */
+/*   Updated: 2024/05/08 06:30:22 by lsaumon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/libft.h"
 
-int	ft_lstsize(t_stack *lst)
+int	ft_lstsize(t_list *lst)
 {
 	int	i;
 

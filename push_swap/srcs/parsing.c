@@ -6,7 +6,7 @@
 /*   By: lsaumon <lsaumon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 16:19:06 by lsaumon           #+#    #+#             */
-/*   Updated: 2024/05/06 07:12:59 by lsaumon          ###   ########.fr       */
+/*   Updated: 2024/05/08 05:53:40 by lsaumon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,18 @@ int	check_double(char **argv)
 		i++;
 	}
 	return (1);
+}
+
+void	free_struct(t_stack *stack)
+{
+	t_stack	*temp;
+
+	while (stack)
+	{
+		temp = stack;
+		stack = stack->next;
+		free(temp);
+	}
 }
 
 int	parsing(int argc, char **argv)
