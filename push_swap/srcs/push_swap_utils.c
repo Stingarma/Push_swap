@@ -6,7 +6,7 @@
 /*   By: lsaumon <lsaumon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 21:18:09 by lsaumon           #+#    #+#             */
-/*   Updated: 2024/05/08 06:40:57 by lsaumon          ###   ########.fr       */
+/*   Updated: 2024/07/01 18:31:40 by lsaumon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,8 @@ void	pa(t_stack **a, t_stack **b)
 		return ;
 	temp = *b;
 	*b = (*b)->next;
+	temp->next = NULL;
 	ft_lstadd_front_push(a, temp);
-	*a = temp;
 	ft_printf("pa\n");
 }
 
@@ -66,7 +66,7 @@ void	pb(t_stack **a, t_stack **b)
 		return ;
 	temp = *a;
 	*a = (*a)->next;
+	temp->next = NULL;
 	ft_lstadd_front_push(b, temp);
-	*b = temp;
 	ft_printf("pb\n");
 }

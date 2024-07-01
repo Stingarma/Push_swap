@@ -6,7 +6,7 @@
 /*   By: lsaumon <lsaumon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 16:19:06 by lsaumon           #+#    #+#             */
-/*   Updated: 2024/05/08 05:53:40 by lsaumon          ###   ########.fr       */
+/*   Updated: 2024/07/01 18:31:43 by lsaumon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,7 @@ void	free_struct(t_stack *stack)
 
 int	parsing(int argc, char **argv)
 {
-	int		i;
+	int	i;
 
 	i = 1;
 	if (argc == 1)
